@@ -28,27 +28,31 @@
   gap: 1.5rem;
   max-height: 40rem;
   aspect-ratio: 1 / 1;
-
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.7) rgba(255, 255, 255, 0.8);
 }
 
 .project-text::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 .project-text::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-text::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .project-text::-webkit-scrollbar-track {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-}
-
-.project-text {
-  scrollbar-width: 1rem;
-  scrollbar-color: black white;
 }
 
 .project p {
