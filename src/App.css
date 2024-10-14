@@ -3,28 +3,7 @@
 main {
   width: 100%;
   height: calc(100vh - 10rem);
-  /* position: relative; */
   overflow-x: hidden;
-}
-
-.video-background {
-  position: relative;
-  height: 100vh;
-}
-
-#background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  opacity: 0.4;
 }
 
 section {
@@ -48,4 +27,19 @@ section:first-of-type {
   align-items: center;
   justify-content: center;
   overflow-x: auto;
+}
+
+p {
+  padding: 0 1rem;
+  text-indent: 1.5rem;
+}
+
+ol {
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0.25rem !important;
+  }
 }

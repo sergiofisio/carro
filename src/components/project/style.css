@@ -17,7 +17,7 @@
 
 .project-text {
   border: 0.2rem solid black;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 2rem;
   background-color: white;
   width: 45%;
   max-width: 40%;
@@ -26,7 +26,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-height: 80%;
+  max-height: 40rem;
+  aspect-ratio: 1 / 1;
 
   overflow-y: auto;
 }
@@ -54,7 +55,6 @@
   color: black;
   width: 100%;
   text-align: justify;
-  text-indent: 1.5rem;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -63,7 +63,7 @@
   width: 45%;
   max-width: 600px;
   aspect-ratio: 1 / 1;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -116,7 +116,13 @@
 
   .project-text,
   .project-photo {
-    width: 100%;
+    min-width: 100%;
+    max-height: 20rem;
+  }
+
+  .project-text {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
 
