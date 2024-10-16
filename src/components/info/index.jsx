@@ -6,14 +6,14 @@ export default function Info() {
   return (
     <section className="info-section">
       <div className="info">
-        <h2>Informações</h2>
+        <h2 className="info-title">Informações</h2>
         <div className="info-text">
           <img src={photEsquema} alt="esquema" />
         </div>
       </div>
       <div className="info-text">
         <div>
-          <h2>Explicação do Circuito</h2>
+          <h2 className="info-subtitle">Explicação do Circuito</h2>
 
           <p>
             O circuito utiliza um Arduino Uno, um driver de motor L293D, dois
@@ -22,7 +22,7 @@ export default function Info() {
           </p>
           <ol>
             <li>
-              Arduino Uno:
+              <h4>Arduino Uno:</h4>
               <ul>
                 <li>
                   Atua como o &quot;cérebro&quot; do circuito, controlando os
@@ -31,7 +31,7 @@ export default function Info() {
               </ul>
             </li>
             <li>
-              Driver de Motor L293D:
+              <h4>Driver de Motor L293D:</h4>
               <ul>
                 <li>
                   Este circuito integrado é responsável por controlar a
@@ -54,7 +54,7 @@ export default function Info() {
               </ul>
             </li>
             <li>
-              Sensores LDR (Resistores Dependentes de Luz)::
+              <h4>Sensores LDR (Resistores Dependentes de Luz)::</h4>
               <ul>
                 <li>
                   São utilizados para detectar a linha no chão. Quando a luz
@@ -70,7 +70,7 @@ export default function Info() {
               </ul>
             </li>
             <li>
-              Bateria de 9V:
+              <h4>Bateria de 9V:</h4>
               <ul>
                 <li>
                   Alimenta os motores através do driver de motor, enquanto o
