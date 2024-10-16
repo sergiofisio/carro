@@ -1,4 +1,5 @@
 import photEsquema from "../../assets/esquema.png";
+import Download from "../donwload";
 import "./style.css";
 
 export default function Info() {
@@ -116,17 +117,8 @@ export default function Info() {
       <div className="download">
         <h2>Faça download do codigo e do esquema do projeto</h2>
         <div>
-          <a
-            href="../../assets/projeto.ino"
-            download
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download codigo
-          </a>
-          <a href="../../assets/esquema.pdf" target="_blank" rel="noreferrer">
-            download esquema
-          </a>
+          <Download url="../../assets/projeto.ino" text="Download Codigo" />
+          <Download url="../../assets/esquema.pdf" text="Download Esquema" />
         </div>
       </div>
     </section>

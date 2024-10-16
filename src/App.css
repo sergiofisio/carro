@@ -1,6 +1,9 @@
 @import url(./styles/global.css);
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   width: 100%;
   height: calc(100vh - 10rem);
   overflow-x: hidden;
