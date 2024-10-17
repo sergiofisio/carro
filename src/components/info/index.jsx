@@ -117,8 +117,8 @@ export default function Info() {
       <div className="download">
         <h2>Faça download do codigo e do esquema do projeto</h2>
         <div>
-          <Download url="../../assets/projeto.ino" text="Download Codigo" />
-          <Download url="../../assets/esquema.pdf" text="Download Esquema" />
+          <Download url="/assets/projeto.ino" text="Download Codigo" />
+          <Download url="/assets/esquema.pdf" text="Download Esquema" />
         </div>
       </div>
     </section>
